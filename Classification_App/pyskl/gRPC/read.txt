@@ -1,0 +1,1 @@
+python3 demo/demo_skeleton.py demo/demo.mp4 out.mp4 --config /home/bishal/Documents/thesis/pyskl/configs/posec3d/slowonly_r50_ait/joint_3d_gcn_tcn.py --checkpoint /home/bishal/Documents/thesis/pyskl/gRPC/pc3d_gcn_tcn_2_2_1_aitdataset.pth --label-map /home/bishal/Documents/thesis/pyskl/gRPC/aitdata_labels.txt

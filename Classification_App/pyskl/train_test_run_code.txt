@@ -1,0 +1,12 @@
+bash tools/dist_test.sh configs/posec3d/slowonly_r50_ait/joint.py checkpoints/poseconv3d/best_top1_acc_epoch_99.pth 4 --eval top_k_accuracy mean_class_accuracy --out result/result_ait_poseconv3d_99.pkl
+
+bash tools/dist_test.sh configs/posec3d/slowonly_r50_ait/joint_1dhm.py checkpoints/pc3d_1d_hm_small/best_top1_acc_epoch_49.pth 2 --eval top_k_accuracy mean_class_accuracy
+
+bash tools/dist_train.sh configs/posec3d/slowonly_r50_ait/joint_1dhm.py 4 --validate
+bash tools/dist_test.sh configs/posec3d/slowonly_r50_ait/joint_1dhm.py checkpoints/poseconv3d_1d_heatmap/best_top1_acc_epoch_50.pth 4 --eval top_k_accuracy mean_class_accuracy --out result/result_ait_poseconv3d_50_1dhm.pkl
+
+bash tools/dist_train.sh configs/cnn1d/j.py 2 --validate
+bash tools/dist_test.sh configs/cnn1d/j.py checkpoints/cnn1d/best_top1_acc_epoch_38.pth 2 --eval top_k_accuracy mean_class_accuracy
+
+bash tools/dist_train.sh configs/stgcn++/stgcn++_ait_hrnet/j.py 2 --validate
+bash tools/dist_test.sh configs/stgcn++/stgcn++_ait_hrnet/j.py checkpoints/stgcn++/best_top1_acc_epoch_39.pth 2 --eval top_k_accuracy mean_class_accuracy

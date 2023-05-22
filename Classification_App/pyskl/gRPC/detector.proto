@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package detector;
+
+service Detector {
+    rpc DetectTest(BatchDetectionResults) returns (ActionResult) {}
+    rpc Detect(BatchDetectionResults) returns (ActionResult) {}
+}
+
+message ActionClass {
+    int32 objectId = 1;
+    int32 sourceId = 2;
+    int32 classId = 3;
+}
+
+// Message informing service that we want to run a detection model against a single image.
+
+message ActionResult {
+    repeated ActionClass classes = 1;
+}
+
+
+// Message encapsulating a single point of pose
+
+message Point {
+    int32 x = 1;
+    int32 y = 2;
+}
+
+
+// Message encapculating a single object pose detected in a single image.
+
+message Detection
+{
+    int32 objectId = 1;
+    repeated Point points = 2;
+}
+
+
+// Message encapsulating detected pose of multiple objects in a single frame.
+
+message DetectionResults
+{
+    repeated Detection detection = 1;
+    uint32 frameNum = 2;
+    int32 sourceId = 3;
+}
+
+
+// Message encapculating detected pose of multiple objects in a batch
+
+message BatchDetectionResults
+{
+    repeated DetectionResults detectionResult = 1;
+    float process_time_ms = 2;
+}

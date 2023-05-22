@@ -1,0 +1,158 @@
+# Deepstream app
+*.onnx
+*.engine
+*.swp
+Deepstream_App/Deepstream-app/deepstream_yolo_vitpose_grpc/build/
+Deepstream_App/Deepstream-app/deepstream_grpc/build/
+*.wts
+*.pth
+*.uff
+*.pb
+models/
+Classification_App/pyskl/gRPC/data.csv
+*data.csv
+*detector.grpc.pb.cc
+*detector.grpc.pb.h
+
+
+*__pycache__
+*.mp4
+*.mov
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+**/*.pyc
+
+# C extensions
+*.so
+*.o
+
+# Distribution / packaging
+Classification_App/pyskl/.Python
+Classification_App/pyskl/build/
+Classification_App/pyskl/develop-eggs/
+Classification_App/pyskl/dist/
+Classification_App/pyskl/downloads/
+Classification_App/pyskl/eggs/
+Classification_App/pyskl/.eggs/
+Classification_App/pyskl/lib/
+Classification_App/pyskl/lib64/
+Classification_App/pyskl/parts/
+Classification_App/pyskl/sdist/
+Classification_App/pyskl/var/
+Classification_App/pyskl/wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+Classification_App/pyskl/MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+Classification_App/pyskl/pip-log.txt
+Classification_App/pyskl/pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+Classification_App/pyskl/htmlcov/
+Classification_App/pyskl/.tox/
+Classification_App/pyskl/.coverage
+Classification_App/pyskl/.coverage.*
+Classification_App/pyskl/.cache
+Classification_App/pyskl/nosetests.xml
+Classification_App/pyskl/coverage.xml
+*.cover
+Classification_App/pyskl/.hypothesis/
+Classification_App/pyskl/.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+Classification_App/pyskl/local_settings.py
+Classification_App/pyskl/db.sqlite3
+
+# Flask stuff:
+Classification_App/pyskl/instance/
+Classification_App/pyskl/.webassets-cache
+
+# Scrapy stuff:
+Classification_App/pyskl/.scrapy
+
+# Sphinx documentation
+Classification_App/pyskl/docs/_build/
+
+# PyBuilder
+Classification_App/pyskl/target/
+
+# Jupyter Notebook
+Classification_App/pyskl/.ipynb_checkpoints
+
+# pyenv
+Classification_App/pyskl/.python-version
+
+# celery beat schedule file
+Classification_App/pyskl/celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+Classification_App/pyskl/.env
+Classification_App/pyskl/.venv
+Classification_App/pyskl/env/
+Classification_App/pyskl/venv/
+Classification_App/pyskl/ENV/
+Classification_App/pyskl/env.bak/
+Classification_App/pyskl/venv.bak/
+
+# mkdocs documentation
+Classification_App/pyskl/site
+
+# mypy
+Classification_App/pyskl/.mypy_cache/
+
+# custom
+/data
+Classification_App/pyskl/.vscode
+Classification_App/pyskl/.idea
+*.pkl
+*.pkl.json
+*.log.json
+Classification_App/pyskl/benchlist.txt
+Classification_App/pyskl/work_dirs/
+Classification_App/pyskl/.cache/
+
+# Pytorch
+*.pth
+
+# Profile
+*.prof
+
+# lmdb
+*.mdb
+
+# avoid soft links created by MIM
+Classification_App/pyskl/pyskl/configs/*
+Classification_App/pyskl/pyskl/tools/*
+
+# unignore ipython notebook files in demo
+!Classification_App/pyskl/demo/*.ipynb
+Classification_App/pyskl/pyskl/.mim
+Classification_App/pyskl/.VScodeCounter
+Classification_App/pyskl/tmp/*
+
+Classification_App/pyskl/examples/extract_diving48_skeleton/*json
+Classification_App/pyskl/examples/extract_diving48_skeleton/*list
+Classification_App/pyskl/examples/extract_diving48_skeleton/*pkl
+Classification_App/pyskl/configs/gen_config.ipynb
+Classification_App/pyskl/dev.ipynb
+Classification_App/pyskl/test.ipynb
+

@@ -1,0 +1,16 @@
+bend
+sit
+sit_clap
+sit_phonecall
+sit_point
+sit_checktime
+sit_wave
+stand
+stand_clap
+stand_phonecall
+stand_point
+stand_checktime
+stand_wave
+walk
+fall
+unstable

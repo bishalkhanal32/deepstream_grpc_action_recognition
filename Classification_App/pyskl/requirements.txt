@@ -1,0 +1,23 @@
+decord>=0.6.0
+matplotlib
+# mmcv-full==1.5.0
+# mmcv-full==latest+torch1.8.0+cu111 -f https://download.openmmlab.com/mmcv/dist/index.html
+
+mmcv-full==1.5.0 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8.0/index.html
+
+mmdet==2.26.0 -f https://download.openmmlab.com/mmdet/dist/cu111/torch1.8.0/index.html
+mmpose==0.29.0 -f https://download.openmmlab.com/mmpose/dist/cu111/torch1.8.0/index.html
+moviepy
+numpy>=1.19.5
+opencv-contrib-python
+opencv-python
+pymemcache
+scipy
+torch>=1.5
+tqdm
+
+fvcore
+
+#numpy==1.23.5
+#pip install -e .
+# pip3 install mmcv-full==latest+torch1.8.2+cu111 -f https://download.openmmlab.com/mmcv/dist/index.html

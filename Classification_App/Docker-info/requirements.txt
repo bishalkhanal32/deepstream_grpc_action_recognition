@@ -1,0 +1,21 @@
+decord==0.6.0
+matplotlib==3.5.1
+mmcv-full==1.7.0 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.8/index.html
+# mmcv-full==latest+torch1.8.2+cu111 -f https://download.openmmlab.com/mmcv/dist/index.html
+mmdet==2.26.0
+mmpose==0.29.0
+moviepy==1.0.3
+numpy==1.23.5
+opencv-contrib-python==4.6.0.66
+#opencv-python==4.5.1.48
+pymemcache==4.0.0
+scipy==1.9.3
+tqdm==4.64.0
+
+fvcore==0.1.5.post20221221
+opencv-python==4.7.0.72
+scikit-learn==1.2.2
+
+#for grpc
+grpcio==1.53.0
+grpcio-tools==1.53.0
